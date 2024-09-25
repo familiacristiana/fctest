@@ -29,17 +29,19 @@ function loadPage(pageName, cb) {
         });
 }
 function links(){
-// let masinfo= document.getElementById('masinfo');
-// masinfo.addEventListener('click', () => {
-//     loadPage('masinfo', atras);
+let masinfo= document.getElementById('masinfo');
+masinfo.addEventListener('click', () => {
+    loadPage('masinfo', atras);
     
-// });
+});
 
 
 
     let canciones= document.getElementById('canciones');
     canciones.addEventListener('click', (e) => {
         e.preventDefault();
+      // Ir al inicio de la página
+        window.scrollTo(0, 0);
         loadPage('canciones', atras);
         
     });
